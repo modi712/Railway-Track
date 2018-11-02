@@ -1,0 +1,19 @@
+function transform=fourierTranfrom1D(signal,length,nyquistFrequency,leastCount)
+    transformr = zeros(nyquistFrequency/leastCount,1);
+    for j = 1:nyquistFrequency/leastCount
+        for i=1:length
+           transformr(j)= transformr(j)+signal(i)*cos(j*i);
+        end
+        transformr(j) = transformr(j)*transformr(j0
+    end
+    transform = zeros(nyquistFrequency/leastCount,1);
+    for j = 1:nyquistFrequency/leastCount
+        for i=1:length
+           transform(j)= transform(j)+signal(i)*cos(j*i);
+        end
+    end
+    transform = zeros(nyquistFrequency/leastCount,1);
+    for j = 1:nyquistFrequency/leastCount
+        transform(j)= transform(j)+signal(i)*cos(j*i);
+    end
+end
